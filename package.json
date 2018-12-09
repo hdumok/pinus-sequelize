@@ -1,0 +1,29 @@
+{
+  "name": "pinus-sequelize",
+  "version": "0.0.1",
+  "description": "Pinus Sequelize Plugin",
+  "author": "hdumok",
+  "main": "./app.js",
+  "types": "./index.d.ts",
+  "eggPlugin": {
+    "name": "sequelize"
+  },
+  "dependencies": {
+    "@types/sequelize": "^4.27.24",
+    "mz-modules": "^2.1.0",
+    "sequelize": "^4.38.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "lib",
+    "app.js",
+    "index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hdumok/pinus-sequelize.git"
+  },
+  "license": "MIT"
+}
