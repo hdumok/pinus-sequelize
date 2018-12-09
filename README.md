@@ -2,7 +2,7 @@
 
 [Sequelize](http://sequelizejs.com) plugin for [Pinus](https://github.com/node-pinus/pinus).
 
-> NOTE: 这个插件只是为了集成Sequelize到Pinus，更多的文档请访问 http://sequelizejs.com, 本插件的代码基本参考了 [egg-sequelize](https://github.com/eggjs/egg-sequelize) 引入 egg 的方式。
+> NOTE: 这个插件只是为了集成Sequelize到Pinus, 更多的文档请访问 http://sequelizejs.com, 本插件的代码基本参考了 [egg-sequelize](https://github.com/eggjs/egg-sequelize) 引入 egg 的方式。
 
 [![NPM version][npm-image]][npm-url]
 [![npm download][download-image]][download-url]
@@ -23,14 +23,14 @@ $ npm install --save pg pg-hstore # PostgreSQL
 $ npm install --save tedious # MSSQL
 ```
 ## Node 
-* 配置也默认遵守sequelize风格，根据app.env环境配置, 即最终的dist/app/config/sequelize.(js|json)里有
+* 配置也默认遵守sequelize风格, 根据app.env环境配置, 即最终的dist/app/config/sequelize.(js|json)里有
 ```
 {
   development: {...},
   production: {...}
 }
 ```
-* 默认 delegate 为 "model"，读取app/model目录, 即挂载sequlize实例到app.model上, 可以通过app.model或 app.get('model'）获得。
+* 默认 delegate 为 "model", 读取app/model目录, 即挂载sequlize实例到app.model上, 可以通过app.model或 app.get('model'）获得。
 ## Usage & configuration
 ```
 // app.ts
@@ -59,7 +59,7 @@ sequelize.configure(app);
 }
 ```
 ```
-// 多种数据配置，通过 app.get(delegate)获得该数据库对象
+// 多种数据配置, 通过 app.get(delegate)获得该数据库对象
 {
   datasources: [{
     delegate: 'model',
