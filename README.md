@@ -36,6 +36,15 @@ $ npm install --save tedious # MSSQL
 // app.ts
 import * as sequelize from 'pinus-sequelize';
 sequelize.configure(app);
+
+// 全局 .d.ts 里声明每个model
+import User from '../../../app/model/user';
+declare module 'sequelize' {
+  interface Sequelize {
+    User: ReturnType<typeof User>;
+  }
+}
+
 ```
 ```
 // 默认配置
