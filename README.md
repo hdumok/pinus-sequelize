@@ -23,7 +23,7 @@ $ npm install --save pg pg-hstore # PostgreSQL
 $ npm install --save tedious # MSSQL
 ```
 ## Node 
-* 配置也默认遵守sequelize风格, 根据app.env环境配置, 即最终的dist/app/config/sequelize.(js|json)里有
+* 配置也默认遵守sequelize风格, 最终的dist/app/config/sequelize.(js|json)里有
 ```
 {
   development: {...},
