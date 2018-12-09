@@ -30,7 +30,7 @@ $ npm install --save tedious # MSSQL
   production: {...}
 }
 ```
-* 默认 delegate 为 "model", 读取app/model目录, 即挂载sequlize实例到app.model上, 可以通过app.model或 app.get('model'）获得。
+* 默认 delegate 为 "model", 读取app/model目录, 即挂载sequlize实例到app.model上, 可以通过 app.get('model'）获得。
 ## Usage & configuration
 ```
 // app.ts
