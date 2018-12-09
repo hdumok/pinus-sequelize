@@ -23,14 +23,14 @@ $ npm install --save pg pg-hstore # PostgreSQL
 $ npm install --save tedious # MSSQL
 ```
 ## Node 
-* 配置也默认遵守sequelize风格，根据 app.env 环境配置, 即最终的dist/app/config/sequelize.(js|json)里有
+* 配置也默认遵守sequelize风格，根据app.env环境配置, 即最终的dist/app/config/sequelize.(js|json)里有
 ```
 {
   development: {...},
   production: {...}
 }
 ```
-* 默认 delegate 为 "model"，读取 app/model 目录, 即挂载sequlize实例到app.model上, 可以通过 app.model 或 app.get('model'）获得。
+* 默认 delegate 为 "model"，读取app/model目录, 即挂载sequlize实例到app.model上, 可以通过app.model或 app.get('model'）获得。
 ## Usage & configuration
 ```
 // app.ts
