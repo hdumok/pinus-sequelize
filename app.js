@@ -76,6 +76,7 @@ exports.configure = (app) => {
       directory,
       target: app[property],
       inject: app,
+      override: true
     }, opt);
 
     const timingKey = `Load "${String(property)}" to Application`;
