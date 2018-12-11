@@ -1,6 +1,6 @@
 {
   "name": "pinus-sequelize",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Pinus Sequelize Plugin",
   "author": "hdumok",
   "main": "./app.js",
@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "@types/sequelize": "^4.27.24",
+    "assert": "^1.4.1",
+    "depd": "^2.0.0",
+    "globby": "^8.0.1",
+    "is-type-of": "^1.2.1",
     "mz-modules": "^2.1.0",
     "sequelize": "^4.38.0"
   },

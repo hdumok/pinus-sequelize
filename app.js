@@ -18,7 +18,7 @@ const defaultConfig = {
   logging: function(...args) {
     // if benchmark enabled, log used,
     const used = typeof args[1] === 'number' ? `(${args[1]} ms)` : '';
-    const sql = args[0].indexOf('Executed') === 0 && args[0].slice(20) || args[0]
+    const sql = args[0].indexOf('Executed (default)') === 0 && args[0].slice(20) || args[0].slice(9)
     this.logger.debug('%s %s', sql, used);
   },
   host: 'localhost',
