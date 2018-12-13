@@ -1,13 +1,10 @@
 {
   "name": "pinus-sequelize",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "Pinus Sequelize Plugin",
   "author": "hdumok",
   "main": "./app.js",
   "types": "./index.d.ts",
-  "eggPlugin": {
-    "name": "sequelize"
-  },
   "dependencies": {
     "@types/sequelize": "^4.27.24",
     "assert": "^1.4.1",
